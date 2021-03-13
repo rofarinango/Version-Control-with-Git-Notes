@@ -35,6 +35,9 @@ Clone from an existing repository
 
 `$git clone [url]`
 
+Change default branch name.
+`$git config --global init.defaultBranch [branchname]`
+
 ## Review a Repo's history
 List new o modified files not yet commited
 
@@ -110,9 +113,19 @@ Delete the [branchname] branch.
 
 Switch between branch.
 
-`git checkout [branchname]`
+`$git checkout [branchname]`
 
 Combine branches, current branch and [other-branchname].
 
 `$git merge [other-branchname]`
+
+## Syncronize
+
+Push a project upstream.
+
+`$git push [remote] [branchname]`
+
+Get the last changes from origin (no merge).
+
+`$git fetch`
 
